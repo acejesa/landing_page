@@ -9,10 +9,10 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 16px;
+    padding-top: 16px;
     font-size: 24px;
 }
-#header, .hero{
+#header, .hero, .footer{
     background-color: #1F2937;
     color: #F9FAF8;
 }
@@ -34,24 +34,26 @@ a{
 }
 .hero {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly; 
     align-items:center;
     padding: 16px 16px 64px 16px;
-    column-gap: 58px; 
+   
 }
 .hero img{
-    width: 350px;
+    width: 500px;
     height: 250px;
     
 }
-.hero button{
+button{
     background-color: #3882F6;
     color: #F9FAF8;
-    border-radius: 4px;
-    border: none;
+    border-radius: 8px;
     text-align: center;
-    text-decoration: none;
+}
+.hero button{
+    border: none;
     padding: 8px 32px;
+    font-size: 20px;
 }
 .hero-main{
     font-size: 48px;
@@ -103,18 +105,64 @@ a{
 
 .quote{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     background-color: #E5E7EB;
     height: 300px;
     color: #1F2937;
     font-style: italic;
     font-size: 36px;
     padding: 32px
+}
+.quote-container{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+
 
 }
 .quote-attribution{
     align-self: flex-end;
     margin-right: 24px;
+}
+/* end of quote styling */
+
+.cta-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+}
+.call-to-action{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    width: 900px;
+    height: 100px;
+    border-radius: 12px;
+    padding: 16px;
+    column-gap: 8px;
+    font-size: 20px;
+}
+.call-to-action button{
+    flex-shrink: 0;
+    height:fit-content;
+    padding: 8px 12px;
+    font-size: 20px;
+    border-style: solid;
+    border-color: #F9FAF8;
+}
+.bold{
+    font-weight: bold;
+    font-size: larger;
+}
+/* end of call to action stylin */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+   
 }
